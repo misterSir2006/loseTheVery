@@ -18,7 +18,7 @@
 		1880217B28FAED3900551226 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1880217A28FAED3900551226 /* Constants.swift */; };
 		1880217E28FB0DF800551226 /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1880217D28FB0DF800551226 /* ApiService.swift */; };
 		18E17CA529A6DD9400456EAC /* UrlBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E17CA429A6DD9400456EAC /* UrlBuilder.swift */; };
-		D7CBEDA6448D5AC5E414C410 /* Pods_LoseTheVery.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D00D65551CB3D8B3BD66C42 /* Pods_LoseTheVery.framework */; };
+		99A5F90FD5D7A9152B998A09 /* Pods_LoseTheVery.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3E5E28A59057879479BBFDC /* Pods_LoseTheVery.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,9 +35,9 @@
 		1880217A28FAED3900551226 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		1880217D28FB0DF800551226 /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
 		18E17CA429A6DD9400456EAC /* UrlBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrlBuilder.swift; sourceTree = "<group>"; };
-		2D00D65551CB3D8B3BD66C42 /* Pods_LoseTheVery.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LoseTheVery.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		54F9E0019DE52B5D8382B467 /* Pods-LoseTheVery.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoseTheVery.debug.xcconfig"; path = "Target Support Files/Pods-LoseTheVery/Pods-LoseTheVery.debug.xcconfig"; sourceTree = "<group>"; };
-		FA8811CBFAAD14D307DE55D5 /* Pods-LoseTheVery.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoseTheVery.release.xcconfig"; path = "Target Support Files/Pods-LoseTheVery/Pods-LoseTheVery.release.xcconfig"; sourceTree = "<group>"; };
+		86971A30EAFDA0FF02449682 /* Pods-LoseTheVery.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoseTheVery.debug.xcconfig"; path = "Target Support Files/Pods-LoseTheVery/Pods-LoseTheVery.debug.xcconfig"; sourceTree = "<group>"; };
+		E3E5E28A59057879479BBFDC /* Pods_LoseTheVery.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LoseTheVery.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5962231351B0447CD611A84 /* Pods-LoseTheVery.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoseTheVery.release.xcconfig"; path = "Target Support Files/Pods-LoseTheVery/Pods-LoseTheVery.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,20 +45,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D7CBEDA6448D5AC5E414C410 /* Pods_LoseTheVery.framework in Frameworks */,
+				99A5F90FD5D7A9152B998A09 /* Pods_LoseTheVery.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		102A7AFC0EB35254F901F649 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E3E5E28A59057879479BBFDC /* Pods_LoseTheVery.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		1880215128FAE95C00551226 = {
 			isa = PBXGroup;
 			children = (
 				1880215C28FAE95C00551226 /* LoseTheVery */,
 				1880215B28FAE95C00551226 /* Products */,
 				9AFA4491CF4998E7A191A4F3 /* Pods */,
-				8A79354E0BF4846779B12532 /* Frameworks */,
+				102A7AFC0EB35254F901F649 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -113,19 +121,11 @@
 			path = Services;
 			sourceTree = "<group>";
 		};
-		8A79354E0BF4846779B12532 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				2D00D65551CB3D8B3BD66C42 /* Pods_LoseTheVery.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		9AFA4491CF4998E7A191A4F3 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				54F9E0019DE52B5D8382B467 /* Pods-LoseTheVery.debug.xcconfig */,
-				FA8811CBFAAD14D307DE55D5 /* Pods-LoseTheVery.release.xcconfig */,
+				86971A30EAFDA0FF02449682 /* Pods-LoseTheVery.debug.xcconfig */,
+				F5962231351B0447CD611A84 /* Pods-LoseTheVery.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -137,11 +137,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1880216E28FAE95F00551226 /* Build configuration list for PBXNativeTarget "LoseTheVery" */;
 			buildPhases = (
-				7148FB9001E3DC4137005B54 /* [CP] Check Pods Manifest.lock */,
+				55D9B0D74075BCD53FA804AE /* [CP] Check Pods Manifest.lock */,
 				1880215628FAE95C00551226 /* Sources */,
 				1880215728FAE95C00551226 /* Frameworks */,
 				1880215828FAE95C00551226 /* Resources */,
-				700384E7D021DAF0E61FA6CF /* [CP] Embed Pods Frameworks */,
+				71A32195F1AAC0B214DCF8D7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -198,24 +198,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		700384E7D021DAF0E61FA6CF /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-LoseTheVery/Pods-LoseTheVery-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-LoseTheVery/Pods-LoseTheVery-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LoseTheVery/Pods-LoseTheVery-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		7148FB9001E3DC4137005B54 /* [CP] Check Pods Manifest.lock */ = {
+		55D9B0D74075BCD53FA804AE /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -235,6 +218,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		71A32195F1AAC0B214DCF8D7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LoseTheVery/Pods-LoseTheVery-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LoseTheVery/Pods-LoseTheVery-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LoseTheVery/Pods-LoseTheVery-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -386,7 +386,7 @@
 		};
 		1880216F28FAE95F00551226 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 54F9E0019DE52B5D8382B467 /* Pods-LoseTheVery.debug.xcconfig */;
+			baseConfigurationReference = 86971A30EAFDA0FF02449682 /* Pods-LoseTheVery.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -419,7 +419,7 @@
 		};
 		1880217028FAE95F00551226 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FA8811CBFAAD14D307DE55D5 /* Pods-LoseTheVery.release.xcconfig */;
+			baseConfigurationReference = F5962231351B0447CD611A84 /* Pods-LoseTheVery.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
