@@ -32,7 +32,7 @@ class LtvView: UIView {
     
     lazy var infoLabel: UILabel = {
         let label = UILabel()
-        label.text = "Combine 'very' with a simple adjective and get a more concise adjective"
+        label.text = "The best way to remove 'very' from your vocabulary."
         label.textColor = Constants.Design.Colors.lightGrayColor
         label.numberOfLines = 0
         label.textAlignment = .center
@@ -57,6 +57,7 @@ class LtvView: UIView {
         textField.textAlignment = .center
         textField.font = UIFont.boldSystemFont(ofSize: 28)
         textField.autocapitalizationType = .none
+        textField.textColor = .black
         
         let attributes = [NSAttributedString.Key.font : UIFont.boldSystemFont(ofSize: 28),
                           NSAttributedString.Key.foregroundColor: Constants.Design.Colors.lightGrayColor]
@@ -80,7 +81,9 @@ class LtvView: UIView {
         button.setTitleColor(Constants.Design.Colors.lightGrayColor, for: .normal)
         button.titleLabel?.textAlignment = .center
         button.setTitle("loading...", for: .normal)
-        button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 28)
+        button.titleLabel?.font = UIFont(descriptor: UIFontDescriptor
+                                    .preferredFontDescriptor(withTextStyle: .body)
+                                    .withDesign(.serif)!, size: 32)
         
         return button
     }()
@@ -111,7 +114,7 @@ class LtvView: UIView {
         let button = UIButton()
         button.backgroundColor = Constants.Design.Colors.lightGrayColor
         button.setTitleColor(.black, for: .normal)
-        button.setTitle("Update database", for: .normal)
+        button.setTitle("Make suggestion", for: .normal)
         button.layer.cornerRadius = 5
         button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 12)
         
@@ -122,7 +125,8 @@ class LtvView: UIView {
     private func fill() {
         backgroundColor = .white
         
-        scrollView.bounces = false
+        scrollView.bounces = true
+        scrollView.keyboardDismissMode = .onDrag
         addSubview(scrollView)
         scrollView.snp.makeConstraints { make in
             make.edges.equalToSuperview()
