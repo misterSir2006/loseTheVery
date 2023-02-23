@@ -13,6 +13,10 @@ class LtvViewController: UIViewController {
     private let vcView = LtvView()
     private let presenter = LtvPresenter()
     
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .darkContent
+    }
+    
     override func loadView() {
         view = vcView
     }
