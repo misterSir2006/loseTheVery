@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
-    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
@@ -13,14 +13,11 @@
             <objects>
                 <viewController id="01J-lp-oVM" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pencilIcon" translatesAutoresizingMaskIntoConstraints="NO" id="QQD-9q-b1s">
-                                <rect key="frame" x="79" y="283" width="235" height="135"/>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lose the Very" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pWc-Wy-3E0">
-                                <rect key="frame" x="79" y="426" width="235" height="69"/>
+                                <rect key="frame" x="0.0" y="250" width="320" height="69"/>
                                 <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="36"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -30,23 +27,16 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="QQD-9q-b1s" secondAttribute="bottom" constant="400" id="EVb-E1-cxG"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="pWc-Wy-3E0" secondAttribute="bottom" constant="323" id="Ee4-wX-ykZ"/>
-                            <constraint firstItem="pWc-Wy-3E0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="79" id="JHW-Dm-leZ"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="pWc-Wy-3E0" secondAttribute="trailing" constant="79" id="K6a-Ha-oQe"/>
-                            <constraint firstItem="pWc-Wy-3E0" firstAttribute="top" secondItem="QQD-9q-b1s" secondAttribute="bottom" constant="8" id="QTF-dN-ecG"/>
-                            <constraint firstItem="QQD-9q-b1s" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="79" id="YlQ-ar-7rH"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="QQD-9q-b1s" secondAttribute="trailing" constant="79" id="gZY-0F-2us"/>
-                            <constraint firstItem="QQD-9q-b1s" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="224" id="pkr-Ve-HNQ"/>
+                            <constraint firstItem="pWc-Wy-3E0" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="7GQ-sd-EMd"/>
+                            <constraint firstItem="pWc-Wy-3E0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ceB-GB-kRb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="pWc-Wy-3E0" secondAttribute="bottom" constant="249" id="hot-JR-9Sw"/>
+                            <constraint firstItem="pWc-Wy-3E0" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="250" id="yzS-O9-uRv"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-248.09160305343511" y="381.69014084507046"/>
+            <point key="canvasLocation" x="-249.375" y="381.33802816901408"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="pencilIcon" width="512" height="512"/>
-    </resources>
 </document>

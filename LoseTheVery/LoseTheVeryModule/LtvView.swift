@@ -129,7 +129,7 @@ class LtvView: UIView {
         scrollView.keyboardDismissMode = .onDrag
         addSubview(scrollView)
         scrollView.snp.makeConstraints { make in
-            make.edges.equalToSuperview()
+            make.edges.equalTo(safeAreaLayoutGuide)
         }
         
         scrollView.addSubview(contentView)
@@ -140,7 +140,7 @@ class LtvView: UIView {
         
         contentView.addSubview(pencilImageView)
         pencilImageView.snp.makeConstraints { make in
-            make.top.equalToSuperview().offset(140)
+            make.top.equalToSuperview().offset(80)
             make.centerX.equalToSuperview()
             make.width.height.equalTo(50)
         }

@@ -12,13 +12,13 @@ struct Constants {
     struct Content {
         
         struct URLs {
-            static let wordsApiUrl = "https://api.airtable.com/v0/appHLMobCaTLuVQQy/Data"
+            static let wordsApiUrl = "https://api.airtable.com/v0/app5BRMXemSBIO42E/Words"
             static let dictionaryUrl = "https://www.dictionary.com/browse"
             static let suggestionUrl = "https://airtable.com"
         }
         
         struct ApiKeys {
-            static let wordsApiKey = "keyoFYTwLB0vomKLC"
+            static let wordsApiKey = "keydMTwnm6S0iJ2ch"
             static let suggestionKey = "shrUvhaGlGYSyarWT"
         }
         
