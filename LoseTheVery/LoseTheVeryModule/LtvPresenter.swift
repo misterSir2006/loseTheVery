@@ -23,6 +23,7 @@ class LtvPresenter {
                 if data.offset != nil {
                     self.getVideos(offset: data.offset, completion: completion)
                 } else {
+                    print(self.recordsArray)
                     completion()
                 }
             case .failure(let error):
@@ -48,7 +49,7 @@ class LtvPresenter {
                           state: AppState) {
         guard let randomElement = data.randomElement()?.fields else { return }
         let randomConcise = randomElement
-                                .filter{ $0.key != "Simple" }
+                                .filter{ $0.key != "Simple" && $0.key != "id" }
                                 .randomElement()
         
         if state == .buttonClick {
@@ -75,7 +76,7 @@ class LtvPresenter {
         
         if !word.isEmpty {
             if let randomConcise = word[0].fields
-                                        .filter({ $0.key != "Simple" && $0.value != conciseButton.titleLabel?.text })
+                                        .filter({ $0.key != "Simple" && $0.key != "id" && $0.value != conciseButton.titleLabel?.text })
                                         .randomElement()?.value {
                 DispatchQueue.main.async {
                     conciseButton.setTitleColor(Constants.Design.Colors.greenColor, for: .normal)
