@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		187C1C662AC5A1B600F232FC /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 187C1C652AC5A1B600F232FC /* SnapKit */; };
+		187C1C692AC5A24B00F232FC /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 187C1C682AC5A24B00F232FC /* Alamofire */; };
+		187C1C6C2AC5A50300F232FC /* BlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187C1C6B2AC5A50300F232FC /* BlurView.swift */; };
+		187C1C742AC5B11600F232FC /* LanguageDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187C1C732AC5B11600F232FC /* LanguageDetector.swift */; };
 		1880215E28FAE95C00551226 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1880215D28FAE95C00551226 /* AppDelegate.swift */; };
 		1880216028FAE95C00551226 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1880215F28FAE95C00551226 /* SceneDelegate.swift */; };
 		1880216228FAE95C00551226 /* LtvViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1880216128FAE95C00551226 /* LtvViewController.swift */; };
@@ -22,6 +25,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		187C1C6B2AC5A50300F232FC /* BlurView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurView.swift; sourceTree = "<group>"; };
+		187C1C732AC5B11600F232FC /* LanguageDetector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageDetector.swift; sourceTree = "<group>"; };
 		1880215A28FAE95C00551226 /* LoseTheVery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoseTheVery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1880215D28FAE95C00551226 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1880215F28FAE95C00551226 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -43,12 +48,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				187C1C662AC5A1B600F232FC /* SnapKit in Frameworks */,
+				187C1C692AC5A24B00F232FC /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		187C1C722AC5B0FC00F232FC /* UIComponents */ = {
+			isa = PBXGroup;
+			children = (
+				187C1C6B2AC5A50300F232FC /* BlurView.swift */,
+			);
+			path = UIComponents;
+			sourceTree = "<group>";
+		};
 		1880215128FAE95C00551226 = {
 			isa = PBXGroup;
 			children = (
@@ -70,6 +84,7 @@
 			children = (
 				1880215D28FAE95C00551226 /* AppDelegate.swift */,
 				1880215F28FAE95C00551226 /* SceneDelegate.swift */,
+				187C1C722AC5B0FC00F232FC /* UIComponents */,
 				1880217128FAEAE600551226 /* LoseTheVeryModule */,
 				1880217C28FB0DE400551226 /* Services */,
 				1880217828FAECCA00551226 /* Resources */,
@@ -104,6 +119,7 @@
 			children = (
 				1880217D28FB0DF800551226 /* ApiService.swift */,
 				18E17CA429A6DD9400456EAC /* UrlBuilder.swift */,
+				187C1C732AC5B11600F232FC /* LanguageDetector.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -126,6 +142,7 @@
 			name = LoseTheVery;
 			packageProductDependencies = (
 				187C1C652AC5A1B600F232FC /* SnapKit */,
+				187C1C682AC5A24B00F232FC /* Alamofire */,
 			);
 			productName = LoseTheVery;
 			productReference = 1880215A28FAE95C00551226 /* LoseTheVery.app */;
@@ -157,6 +174,7 @@
 			mainGroup = 1880215128FAE95C00551226;
 			packageReferences = (
 				187C1C642AC5A1B600F232FC /* XCRemoteSwiftPackageReference "SnapKit" */,
+				187C1C672AC5A24B00F232FC /* XCRemoteSwiftPackageReference "Alamofire" */,
 			);
 			productRefGroup = 1880215B28FAE95C00551226 /* Products */;
 			projectDirPath = "";
@@ -191,6 +209,8 @@
 				1880217728FAEB2B00551226 /* LtvPresenter.swift in Sources */,
 				1880217B28FAED3900551226 /* Constants.swift in Sources */,
 				1880217E28FB0DF800551226 /* ApiService.swift in Sources */,
+				187C1C6C2AC5A50300F232FC /* BlurView.swift in Sources */,
+				187C1C742AC5B11600F232FC /* LanguageDetector.swift in Sources */,
 				1880215E28FAE95C00551226 /* AppDelegate.swift in Sources */,
 				1880216028FAE95C00551226 /* SceneDelegate.swift in Sources */,
 			);
@@ -420,6 +440,14 @@
 				minimumVersion = 5.0.0;
 			};
 		};
+		187C1C672AC5A24B00F232FC /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -427,6 +455,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 187C1C642AC5A1B600F232FC /* XCRemoteSwiftPackageReference "SnapKit" */;
 			productName = SnapKit;
+		};
+		187C1C682AC5A24B00F232FC /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 187C1C672AC5A24B00F232FC /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

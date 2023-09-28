@@ -20,5 +20,35 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window?.makeKeyAndVisible()
         window?.windowScene = windowScene
     }
+    
+// MARK: - Scene Lifecycle with Blur
+    let blur = BlurView()
+    
+    func sceneWillEnterForeground(_ scene: UIScene) {
+        self.blur.removeFromSuperview()
+    }
+    
+    func sceneDidBecomeActive(_ scene: UIScene) {
+        self.blur.removeFromSuperview()
+    }
+    
+    func sceneWillResignActive(_ scene: UIScene) {
+        if !self.blur.isDescendant(of: self.window!) {
+
+            guard let field = LtvPresenter.recordsArray.randomElement(),
+                  let simpleWord = field.fields["Simple"],
+                  let conciseWord = field.fields.filter({
+                      $0.key != "Simple" && $0.key != "id"
+                  }).randomElement()?.value else { return }
+            
+            blur.conciseLabel.text = conciseWord
+            blur.simpleWordLabel.text = simpleWord
+            
+            self.window?.addSubview(self.blur)
+            blur.snp.makeConstraints { make in
+                make.edges.equalToSuperview()
+            }
+        }
+    }
 }
 
