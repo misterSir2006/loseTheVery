@@ -8,7 +8,7 @@
 import UIKit
 import SafariServices
 
-class LtvViewController: UIViewController {
+final class LtvViewController: UIViewController {
     
     private let vcView = LtvView()
     private let presenter = LtvPresenter()

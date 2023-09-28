@@ -7,7 +7,7 @@
 
 import UIKit
 
-class BlurView: UIView {
+final class BlurView: UIView {
     
     // MARK: - init
     override init(frame: CGRect) {

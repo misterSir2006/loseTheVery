@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ApiService {
+final class ApiService {
     
     enum NetworkMethods: String {
         case get = "GET"

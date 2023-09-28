@@ -7,7 +7,7 @@
 
 import Foundation
 
-class LtvModel {
+final class LtvModel {
 
     // MARK: - Words
     struct Words: Codable {

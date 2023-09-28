@@ -7,7 +7,7 @@
 
 import UIKit
 
-class LtvPresenter {
+final class LtvPresenter {
     
     // MARK: Get Videos
     static var recordsArray: [LtvModel.Record] = []

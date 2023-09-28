@@ -6,9 +6,8 @@
 //
 
 import UIKit
-import SnapKit
 
-class LtvView: UIView {
+final class LtvView: UIView {
     
     override init(frame: CGRect) {
         super.init(frame: frame)

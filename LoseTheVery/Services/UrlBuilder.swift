@@ -7,7 +7,7 @@
 
 import Foundation
 
-class UrlBuilder {
+final class UrlBuilder {
     
     static func buildWordsUrl(offset: String?) -> String {
         let baseUrl = Constants.Content.URLs.wordsApiUrl
