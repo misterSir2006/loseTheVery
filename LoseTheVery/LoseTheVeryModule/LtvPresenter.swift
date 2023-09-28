@@ -10,7 +10,7 @@ import UIKit
 class LtvPresenter {
     
     // MARK: Get Videos
-    var recordsArray: [LtvModel.Record] = []
+    static var recordsArray: [LtvModel.Record] = []
     
     func getVideos(offset: String?, completion: @escaping () -> Void) {
         ApiService.get(for: LtvModel.Words.self,
@@ -18,12 +18,12 @@ class LtvPresenter {
                        method: .get) { result in
             switch result {
             case .success(let data):
-                self.recordsArray += data.records
+                LtvPresenter.recordsArray += data.records
                 
                 if data.offset != nil {
                     self.getVideos(offset: data.offset, completion: completion)
                 } else {
-                    print(self.recordsArray)
+                    print(LtvPresenter.recordsArray)
                     completion()
                 }
             case .failure(let error):

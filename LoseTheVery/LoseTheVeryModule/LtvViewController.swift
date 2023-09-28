@@ -28,7 +28,7 @@ class LtvViewController: UIViewController {
     
     private func setupUI() {
         presenter.getVideos(offset: nil) { [self] in
-            presenter.setRandomElement(data: presenter.recordsArray,
+            presenter.setRandomElement(data: LtvPresenter.recordsArray,
                                        simpleTextField: vcView.simpleWordTextField,
                                        conciseButton: vcView.conciseButton,
                                        state: .firstSetup)
@@ -61,7 +61,7 @@ class LtvViewController: UIViewController {
     }
     
     @objc func randomTapped() {
-        presenter.setRandomElement(data: presenter.recordsArray,
+        presenter.setRandomElement(data: LtvPresenter.recordsArray,
                                    simpleTextField: vcView.simpleWordTextField,
                                    conciseButton: vcView.conciseButton,
                                    state: .buttonClick)
@@ -70,7 +70,7 @@ class LtvViewController: UIViewController {
     }
     
     @objc func getResultTapped() {
-        presenter.searchForWord(data: presenter.recordsArray,
+        presenter.searchForWord(data: LtvPresenter.recordsArray,
                                 simpleTextField: vcView.simpleWordTextField,
                                 conciseButton: vcView.conciseButton)
     }
@@ -83,7 +83,7 @@ class LtvViewController: UIViewController {
 extension LtvViewController: UITextFieldDelegate {
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         
-        presenter.searchForWord(data: presenter.recordsArray,
+        presenter.searchForWord(data: LtvPresenter.recordsArray,
                                 simpleTextField: vcView.simpleWordTextField,
                                 conciseButton: vcView.conciseButton)
         
